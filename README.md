@@ -25,7 +25,13 @@ Having done that, to set up the infrstructure at once i ran the following comman
 
 `terraform apply`
 
+The terraform folder is divided in the following modules:
 
+- http-server - setting up the vpc with a public facing ec2 instance to host the server
+
+- kinesis-setup - setting up kinesis firehose and attaching an s3 bucket to it
+
+- s3bucket - setting up the s3 bucket that stores the data that flows from kinesis
 
 
 
